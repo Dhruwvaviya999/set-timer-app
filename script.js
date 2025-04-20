@@ -31,7 +31,7 @@ function renderSingleTimer(timer) {
   timerDiv.innerHTML = `
     <p>Time Left :</p>
     <div class="time-display">${formatTime(timer.hour, timer.minute, timer.second)}</div>
-    <button onclick="deleteBtn(${timer.id})">Delete</button>
+    <button id="deleteTimerBtn" onclick="deleteBtn(${timer.id})">Delete</button>
   `;
 
   timersContainer.appendChild(timerDiv);
