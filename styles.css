@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "roboto", sans-serif;
+}
+
+body{
+    background-color: #1D1D23;
+    color: #FFFFFF;
+}
+
+h1{
+    text-align: center;
+    margin-top: 35px;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+}
+
+.set-timer-container, .timer{
+    width: 849px;
+    margin: auto;
+    background-color: #34344A;
+    height: 132px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 25px;
+}
+
+.inputs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputs > span{
+    font-size: 45px;
+    font-weight: 600;
+}
+
+.time{
+    margin: 0 15px;
+    width: 78px;
+    background-color: #34344A;
+    border: none;
+    color: #FFFFFF;
+    height: 56px;
+    font-size: 45px;
+    /* text-decoration: underline; */
+}
+
+.timer > div{
+    height: 60px;
+    width: 280px;
+    font-size: 50px;
+}
+
+.hours, .seconds{
+    width: 65px;
+}
+
+::placeholder {
+    color: #FFFFFF;
+    opacity: 0.4;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#setTimerBtn, #deleteTimerBtn{
+    width: 124px;
+    height: 52px;
+    color: #34344A;
+    border-radius: 26px;
+    background-color: #F0F757;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+#stopTimer{
+    width: 124px;
+    height: 52px;
+    color: #FFFFFF;
+    border-radius: 26px;
+    background-color: #34344A;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+#delete-timer-btn{
+    background-color: black;
+}
+
+#current-timers{
+    width: 413px;
+    height: 66px;
+    border-radius: 50px;
+    background-color: #39393E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+}
+
+.timers-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
